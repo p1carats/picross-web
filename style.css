@@ -1,8 +1,9 @@
 body {
     margin: 0;
-    padding: 0px;
     width: 100%;
     font-family: 'Lato', sans-serif;
+    background-image: url(img/header.jpg);
+    background-size: cover;
 }
 
 header{
@@ -50,6 +51,13 @@ header span{
 
 }
 
+.overlay h1{
+    color: #818181;
+    font-size: 45px;
+    text-decoration: underline;
+    vertical-align: top;
+}
+
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
 }
@@ -73,11 +81,55 @@ header span{
 
 main{
     padding-left: 10px;
+    font-family: 'Sanchez', serif;
+    
 }
 
-h1{
-    font-family:Arial, Helvetica, sans-serif;
+main h1{
     text-decoration: underline;
+    text-align: center;
+    font-size: 50px;
+    color: #fed054;
+    -webkit-text-stroke: 1.5px #b37f46;
+}
+
+h2{
+    text-align:center;
+    color: white;
+}
+
+.story{
+    color: white;
+}
+
+.game {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(134, 71, 18);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.game:hover {
+    background-color: rgb(158, 91, 15);
+}
+
+.game:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.game a{
+    text-decoration: none;
+    color: white;
 }
 
 table{
@@ -88,7 +140,6 @@ table{
 .dot {
     width:2em;
     height:2em;
-    margin:0.5px;
 }
 
 .dot {
@@ -100,8 +151,31 @@ table{
     -o-transition:all 0.5s ease; 
     transition:all 0.5s ease;
 }
-   
+
+.legendC td{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    width:2em;
+    height:4em;
+}
+
+.legendL{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    width:4em;
+    height:2em;
+}
+
+.legendC .null{
+    border: none;
+}
+
 footer{
       text-align: center;
       border: black;
+      background-image: url(img/footer.jpg);
+      padding-bottom: 10px;
 }
