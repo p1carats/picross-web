@@ -3,7 +3,7 @@ body {
     width: 100%;
     font-family: 'Lato', sans-serif;
     background-image: url(img/header.jpg);
-    background-size: cover;
+    background-size:cover;
 }
 
 header{
@@ -100,9 +100,47 @@ h2{
 
 .story{
     color: white;
+    margin-right:5%;
 }
 
-.game {
+.imagetuto {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagetuto figure{
+    display: table;
+    
+}
+
+.imagetuto figure img{
+    width:50%;
+    margin-left: 15px;
+}
+
+.imagetuto figcaption{
+    background-image: url(img/footer.jpg);
+    display: table-caption;
+    caption-side: bottom;
+    text-align: center;
+    width:55%;
+}
+
+.titretuto{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 35px;
+    color: #fed054;
+    -webkit-text-stroke: 1.5px #b37f46;
+}
+
+button{
+    position:relative;
+    bottom:25%;
+    left: 40%;
+}
+
+.gameBtton {
     border: 0;
     line-height: 2.5;
     padding: 0 20px;
@@ -118,16 +156,60 @@ h2{
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
-.game:hover {
+.gameBtton:hover {
     background-color: rgb(158, 91, 15);
 }
 
-.game:active {
+.homeBtton {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(184, 181, 178);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.homeBtton:hover {
+    background-color: rgb(196, 194, 193);
+}
+
+.tutoBtton {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(168, 168, 168);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.tutoBtton:hover {
+    background-color: rgb(189, 187, 184);
+}
+
+.tutoBtton a, .homeBtton a{
+    color:black;
+}
+
+button:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
-.game a{
+button a{
     text-decoration: none;
     color: white;
 }
@@ -155,17 +237,22 @@ table{
 .legendC td{
     border-right: 1px solid black;
     border-left: 1px solid black;
-    border-collapse: collapse;
     text-align: center;
     width:2em;
-    height:4em;
+    height:6em;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
 }
 
 .legendL{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     border-collapse: collapse;
-    width:4em;
+    text-align:end;
+    width:6em;
     height:2em;
 }
 

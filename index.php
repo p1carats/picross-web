@@ -12,11 +12,11 @@
     <p>They were an immediate success and are still widely spread today.</p>
     </section>
 
-    <button class="tuto"type="button">
+    <button class="tutoBtton"type="button">
         <a href="tutorial.php">Tutorial</a>
     </button>
 
-    <button class="game"type="button">
+    <button class="gameBtton"type="button">
         <a href="game.php">Play the Game!</a>
     </button>
     
