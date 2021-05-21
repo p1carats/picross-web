@@ -1,3 +1,4 @@
+/* CSS FOR HEADER */
 body {
     margin: 0;
     width: 100%;
@@ -79,6 +80,8 @@ header span{
     }
 }
 
+/* CSS FOR MAIN INDEX*/
+
 main{
     padding-left: 10px;
     font-family: 'Sanchez', serif;
@@ -103,6 +106,8 @@ h2{
     margin-right:5%;
 }
 
+/* CSS FOR TUTORIAL */
+
 .imagetuto {
     display: flex;
     flex-direction: row;
@@ -126,13 +131,15 @@ h2{
     width:55%;
 }
 
-.titretuto{
+.titreAC{
     text-decoration: underline;
     text-align: center;
     font-size: 35px;
     color: #fed054;
     -webkit-text-stroke: 1.5px #b37f46;
 }
+
+/* CSS FOR BUTTONS */
 
 button{
     position:relative;
@@ -214,6 +221,16 @@ button a{
     color: white;
 }
 
+/* CSS FOR SETTINGS */
+
+.division, .optnGrille{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* CSS FOR PICROSS */
+
 table{
     display:flex;
     justify-content: center;
@@ -259,6 +276,8 @@ table{
 .legendC .null{
     border: none;
 }
+
+/* CSS FOR FOOTER */
 
 footer{
       text-align: center;

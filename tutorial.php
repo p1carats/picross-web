@@ -1,7 +1,7 @@
 <?php require 'includes /header.php'; ?>
 <main>
     <h1>Anisen Crossing</h1>
-    <h2 class="titretuto">Tutorial</h2>
+    <h2 class="titreAC">Tutorial</h2>
 
     <section class="story">
         <h3>Learn how to play Nonogram!</h3>

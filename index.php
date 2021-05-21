@@ -17,7 +17,7 @@
     </button>
 
     <button class="gameBtton"type="button">
-        <a href="game.php">Play the Game!</a>
+        <a href="settings.php">Play the Game!</a>
     </button>
     
 </main>
