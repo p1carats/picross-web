@@ -223,10 +223,45 @@ button a{
 
 /* CSS FOR SETTINGS */
 
-.division, .optnGrille{
+.division, .optnGrille, .optnGrille1{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.optnGrille label, .optnGrille1 label{
+    background-image: url(img/footer.jpg);
+    outline:2px solid brown;
+    border-radius: 2rem;
+    display:inline-block;
+    text-align: center;
+
+}
+
+.division .optnGrille img{
+    width:50%;
+    margin-left: 15px;
+}
+
+.optnGrille1{
+    font-size: 30px;
+}
+
+.optnGrille2{
+    background-image: url(img/footer.jpg);
+    background-size:cover;
+    outline:2px solid brown;
+    border-radius: 2rem;
+    text-align: center;
+    width:300px;
+    margin-left: 25%;
+}
+
+.division h3{
+    color: white;
+    font-size: x-large;
+    text-align: center;
 }
 
 /* CSS FOR PICROSS */
