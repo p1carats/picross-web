@@ -2,8 +2,8 @@
 body {
   margin: 0;
   width: 100%;
-  font-family: 'Lato', sans-serif;
-  background-image: url(../img/header.jpg);
+  font-family: "Lato", sans-serif;
+  background-image: url("../img/header.jpg");
   background-size: cover;
 }
 
@@ -86,7 +86,7 @@ header span {
 /* index */
 main {
   padding-left: 10px;
-  font-family: 'Sanchez', serif;
+  font-family: "Sanchez", serif;
 }
 
 main h1 {
@@ -99,13 +99,13 @@ main h1 {
 
 /* home page */
 h2 {
-  text-align:center;
+  text-align: center;
   color: white;
 }
 
 .story {
   color: white;
-  margin-right:5%;
+  margin-right: 5%;
 }
 
 /* tutorial */
@@ -120,16 +120,16 @@ h2 {
 }
 
 .imagetuto figure img {
-  width:50%;
+  width: 50%;
   margin-left: 15px;
 }
 
 .imagetuto figcaption {
-  background-image: url(img/footer.jpg);
+  background-image: url("../img/footer.jpg");
   display: table-caption;
   caption-side: bottom;
   text-align: center;
-  width:55%;
+  width: 55%;
 }
 
 .titreAC {
@@ -142,8 +142,8 @@ h2 {
 
 /* buttons */
 button {
-  position:relative;
-  bottom:25%;
+  position: relative;
+  bottom: 25%;
   left: 40%;
 }
 
@@ -196,7 +196,7 @@ button {
 }
 
 .tutoBtton a, .homeBtton a {
-  color:black;
+  color: black;
 }
 
 button:active {
@@ -217,15 +217,15 @@ button a {
 }
 
 .optnGrille label, .optnGrille1 label{
-  background-image: url(../img/footer.jpg);
-  outline:2px solid brown;
+  background-image: url("../img/footer.jpg");
+  outline: 2px solid brown;
   border-radius: 2rem;
-  display:inline-block;
+  display: inline-block;
   text-align: center;
 }
 
 .division .optnGrille img{
-  width:50%;
+  width: 50%;
   margin-left: 15px;
 }
 
@@ -234,12 +234,12 @@ button a {
 }
 
 .optnGrille2{
-  background-image: url(../img/footer.jpg);
-  background-size:cover;
-  outline:2px solid brown;
+  background-image: url("../img/footer.jpg");
+  background-size: cover;
+  outline: 2px solid brown;
   border-radius: 2rem;
   text-align: center;
-  width:300px;
+  width: 300px;
   margin-left: 25%;
 }
 
@@ -251,31 +251,31 @@ button a {
 
 /* picross itself */
 table{
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
 .dot {
-  width:2em;
-  height:2em;
+  width: 2em;
+  height: 2em;
 }
 
 .dot {
-  background-color:#ccc;
-  border-radius:0;
-  cursor:pointer;
-  -webkit-transition:all 0.5s ease;
-  -moz-transition:all 0.5s ease; 
-  -o-transition:all 0.5s ease; 
-  transition:all 0.5s ease;
+  background-color: #ccc;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease; 
+  -o-transition: all 0.5s ease; 
 }
 
 .legendC td {
   border-right: 1px solid black;
   border-left: 1px solid black;
   text-align: center;
-  width:2em;
-  height:6em;
+  width: 2em;
+  height: 6em;
 }
 
 .box {
@@ -287,9 +287,9 @@ table{
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   border-collapse: collapse;
-  text-align:end;
-  width:6em;
-  height:2em;
+  text-align: end;
+  width: 6em;
+  height: 2em;
 }
 
 .legendC .null {
@@ -300,6 +300,6 @@ table{
 footer {
   text-align: center;
   border: black;
-  background-image: url(../img/footer.jpg);
+  background-image: url("../img/footer.jpg");
   padding-bottom: 10px;
 }
