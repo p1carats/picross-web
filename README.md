@@ -1,6 +1,12 @@
 # picross-web
 
-Web interface used to play [piC11ross](https://github.com/inspwastaken/piC11ross), developed in HTML, CSS, PHP, and possibly JS.
+Web interface used to play [piC11ross](https://github.com/inspwastaken/piC11ross), developed in HTML, CSS, JS, and PHP.
+
+## Highlights
+
+ - xx
+ - xx
+ - And much more!
 
 ## Licensing
 
