@@ -1,11 +1,12 @@
 # picross-web
 
-Web interface used to play [piC11ross](https://github.com/inspwastaken/piC11ross), developed in HTML, CSS, JS, and PHP.
+Web interface used to play with [piC11ross](https://github.com/inspwastaken/piC11ross), developed in HTML, CSS, JS, and PHP.
 
 ## Highlights
 
- - xx
- - xx
+ - Play Picross interactively and find your way on our generated grids
+ - Supports multiple themes and languages
+ - Find out more about this game and how to play it
  - And much more!
 
 ## Licensing

@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anisen Crossing</title>
     <!-- CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">  
+    <style>@import url('https://fonts.googleapis.com/css2?family=Lato&family=Sanchez&display=swap');</style>  
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7d213dfca0.js" crossorigin="anonymous"></script>
     <!-- JS -->
