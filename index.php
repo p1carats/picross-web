@@ -15,10 +15,10 @@
     <script src="assets/js/script.js"></script>
   </head>
   <body>
-    <?php include "include/header.php"; ?>
+    <?php include "includes/header.php"; ?>
     <main>
-      <?php include("app/page.php"); ?>
+      <?php include "app/page.php"; ?>
     </main>
-    <?php include "include/footer.php"; ?>
+    <?php include "includes/footer.php"; ?>
   </body>
 </html>
