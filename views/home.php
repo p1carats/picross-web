@@ -9,9 +9,9 @@
     <p>They were an immediate success and are still widely spread today.</p>
   </section>
   <button class="tutoBtton"type="button">
-    <a href="tutorial.php">Tutorial</a>
+    <a href="?page=tutorial">Tutorial</a>
   </button>
   <button class="gameBtton"type="button">
-    <a href="settings.php">Play the Game!</a>
+    <a href="?page=settings">Play the Game!</a>
   </button>
 </div>

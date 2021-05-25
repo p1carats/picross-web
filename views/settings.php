@@ -22,7 +22,7 @@
         <label for="hard"><i class="far fa-angry"></i>hard</label>
       </div>
       <button class="gameBtton"type="button">
-        <a href="game.php">Go!</a>
+        <a href="?page=game">Go!</a>
       </button>
     </section>
     <section>
@@ -42,7 +42,7 @@
         <label for="20"><img src="img/20x20.png" alt="20x20 Grid"></img>20x20</label>
       </div>
       <button class="gameBtton"type="button">
-        <a href="game.php">Go!</a>
+        <a href="?page=game">Go!</a>
       </button>
     </section>
   </div>
