@@ -296,6 +296,38 @@ table{
   border: none;
 }
 
+.solveBtton {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Bahiana', cursive;
+  position: absolute;
+  left: 78%;
+  bottom: 47%;
+  border-radius: 10px;
+  background-color: rgb(134, 71, 18);
+  background-image: linear-gradient(to top left,rgba(0, 0, 0, .2),rgba(0, 0, 0, .2) 30%,rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.solveBtton:hover {
+  background-color: rgb(158, 91, 15);
+}
+
+
+/* chrono */
+input[type=text] {
+  text-align: center;
+  font-family: 'Bahiana', cursive;
+  background-image: url("../img/footer.jpg");
+  border:none;
+  font-size: 30px;
+  position: absolute;
+  left:75%;
+}
+
 /* footer */
 footer {
   text-align: center;
