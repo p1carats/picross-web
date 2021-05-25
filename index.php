@@ -17,7 +17,7 @@
   <body>
     <?php include "./include/header.php"; ?>
     <main>
-      <?php // TO-DO ?>
+      <?php include("app/page.php"); ?>
     </main>
     <?php include "./include/footer.php"; ?>
   </body>
