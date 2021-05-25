@@ -6,11 +6,11 @@
       <h3>Size of the grid</h3>
       <div class="optnGrille">
         <input type="radio" id="10" name="grille" value="10" checked>
-        <label for="10"><img src="img/10x10.png" alt="10x10 Grid"></img>10x10</label>
+        <label for="10"><img src="assets/img/10x10.png" alt="10x10 Grid"></img>10x10</label>
         <input type="radio" id="15" name="grille" value="15">
-        <label for="15"><img src="img/15x15.png" alt="15x15 Grid"></img>15x15</label>
+        <label for="15"><img src="assets/img/15x15.png" alt="15x15 Grid"></img>15x15</label>
         <input type="radio" id="20" name="grille" value="20">
-        <label for="20"><img src="img/20x20.png" alt="20x20 Grid"></img>20x20</label>
+        <label for="20"><img src="assets/img/20x20.png" alt="20x20 Grid"></img>20x20</label>
       </div>
       <h3>Difficulty</h3>
       <div class="optnGrille1">
@@ -35,11 +35,11 @@
       <h3>Size of the grid</h3>
       <div class="optnGrille">
         <input type="radio" id="10" name="grille" value="10" checked>
-        <label for="10"><img src="img/10x10.png" alt="10x10 Grid"></img>10x10</label>
+        <label for="10"><img src="assets/img/10x10.png" alt="10x10 Grid"></img>10x10</label>
         <input type="radio" id="15" name="grille" value="15">
-        <label for="15"><img src="img/15x15.png" alt="15x15 Grid"></img>15x15</label>
+        <label for="15"><img src="assets/img/15x15.png" alt="15x15 Grid"></img>15x15</label>
         <input type="radio" id="20" name="grille" value="20">
-        <label for="20"><img src="img/20x20.png" alt="20x20 Grid"></img>20x20</label>
+        <label for="20"><img src="assets/img/20x20.png" alt="20x20 Grid"></img>20x20</label>
       </div>
       <button class="gameBtton"type="button">
         <a href="?page=game">Go!</a>
