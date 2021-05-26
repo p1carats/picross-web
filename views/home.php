@@ -1,15 +1,6 @@
 <div id="home">
   <h1>Anisen Crossing</h1>
   <h2>Take a break and play one of the most famous games in the world:<br>Nonogram !</h2>
-  <button class="themeBtton"type="button">
-  <a class="btn1">Day Theme</a><br/>
-</button>
-<button class="themeBtton"type="button">
-  <a class="btn2">Night Theme</a><br/>
-</button>
-  <button class="themeBtton"type="button">
-  <a class="btn3">Beach Theme</a>
-</button>   
   <section class="story">
     <h3>Some informations about Nonograms...</h3>
     <p>Nonograms are a type of puzzles on a grid, derivated from another famous grid puzzle: crosswords. Early Crosswords often used pictures as part of their layout: an example is Stephenson's Train, published in Italy in 1925. However nonograms are fairly newer than crosswords, as their origin is found in 1987, in Tokyo.</p>
@@ -23,20 +14,4 @@
   <button class="gameBtton"type="button">
     <a href="?page=settings">Play the Game!</a>
   </button>
-<script>
-  $(".btn1").click(function() {
-  $('body').removeClass("default night beach");
-  $('body').addClass("green");
- });
- 
- $(".btn2").click(function() {
-  $('body').removeClass("default green beach");
-  $('body').addClass("night");
- });
- 
- $(".btn3").click(function() {
-  $('body').removeClass("default night green");
-  $('body').addClass("beach");
- });
- </script>
 </div>
