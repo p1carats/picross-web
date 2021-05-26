@@ -46,4 +46,9 @@
       </button>
     </section>
   </div>
+  <?php
+
+  $path = __DIR__.'/picross.txt';
+  $query = "LOAD DATA LOCAL INFILE '$path' INTO TABLE grid FIELDS TERMINATED BY '\n'";
+  ?>
 </div>
