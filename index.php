@@ -1,3 +1,6 @@
+<?php
+require 'includes/dbconnect.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,7 +18,7 @@
     <!-- JS -->
     <script src="assets/js/script.js"></script>
   </head>
-  <body class="default">
+  <body>
     <?php include "includes/header.php"; ?>
     <main>
       <?php include "app/page.php"; ?>
