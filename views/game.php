@@ -1,5 +1,8 @@
 <div id="game">
   <h1>Play Anisen Crossing</h1>
+  <button type="button" class="themeBtton" onclick="day()">Day Theme</button>
+  <button type="button" class="themeBtton" onclick="night()">Night Theme</button>
+  <button type="button" class="themeBtton" onclick="beach()">Beach Theme</button>
   <form action="" method="post" name="formu" id="formu">
     <p> 
       <input name="heure" type="text" id="heure" value="00 : 00 : 00">
@@ -174,4 +177,17 @@ function CarreNoir(){
 }
 
 window.onload = Chrono();
+
+/// themes
+function day(){
+  document.body.style.backgroundImage= "url('assets/img/header.jpg')";
+}
+
+function night(){
+  document.body.style.backgroundImage= "url('assets/img/night.jpg')";
+}
+
+function beach(){
+  document.body.style.backgroundImage= "url('assets/img/beach.jpg')";
+}
 </script>
