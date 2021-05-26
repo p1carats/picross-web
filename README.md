@@ -9,7 +9,7 @@ Web interface used to play with [piC11ross](https://github.com/inspwastaken/piC1
  - Find out more about this game and how to play it
  - And much more!
 
-## Evolution
+## Journal
 
 May 18th:
   - Started working on the website by gathering different ideas and models of how it could look like around the game.
@@ -47,6 +47,38 @@ May 25th:
 May 26th:
   - Added buttons on the Game page to change the background image of the website. The players has now three options: "Day Theme" which is default, "Night Theme", and "Beach Theme"
   - Started the creation of a database to communicate and save information between the website and the program, such as the scoreboard and the generated games.
+
+## Bibliography
+
+Main source to help with errors in PHP, CSS and JavaScript:
+Stackoverflow (various forums on different errors): https://stackoverflow.com/
+W3School (for various CSS and HTML elements): https://www.w3schools.com
+
+Websites for documentation on HTML, CSS, PHP and JS declarations:
+- MDN Web Docs: 
+  - for discovering how to code in JavaScript: https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+  - for the help on various CSS declarations: https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/CSS_basics
+  - for the help on buttons and input elements: https://developer.mozilla.org/fr/docs/Web/HTML/Element/Button
+- MySQL: 
+  - for a better understanding of how works a database like MySQL: https://dev.mysql.com/doc/mysql-getting-started/en/
+  - for particularly helping on "LOAD DATA LOCAL INFILE" code: https://dev.mysql.com/doc/refman/8.0/en/load-data.html
+  - for also helping in manipulating MySQL and the command line to work with it: https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_local_infile
+- Codepen.io:
+  - for the main idea of the creation of the dynamic grid of the game: https://codepen.io/kelseyhisek/pen/nupFh
+  - for the chronometer: https://codepen.io/korell/pen/bVbBgg?editors=101
+- Openclassrooms:
+  - for helping with phpMyAdmin: https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/913893-phpmyadmin
+  - for helping with inserting data to a database: https://openclassrooms.com/fr/courses/1959476-administrez-vos-bases-de-donnees-avec-mysql/1960995-inserez-des-donnees
+- CSS Débutant, for helping with borders around an element: http://css.mammouthland.net/border-css.php
+- jQuery API Documentation, for helping removing the class of an element dynamically: https://api.jquery.com/removeclass/
+- Christopher Aue, for helping with vertical alignment in CSS: https://christopheraue.net/design/vertical-align
+- CSS Tricks, for helping with the aesthetic of the game grid: https://css-tricks.com/rotated-table-column-headers/
+- Wikipedia, and PuzzleMuseum, for the story of the Nonogram: https://www.puzzlemuseum.com/griddler/gridhist.htm
+- Font Awesome, for icons: https://fontawesome.com/
+- Google Fonts, for fonts: https://fonts.google.com/specimen/Sanchez?preview.text=Animal%20Crossing&preview.text_type=custom&query=sanchez
+- GrandGamersGuild, for clearly explaining how to solve a Nonogram: https://grandgamersguild.com/how-to-solve-picross-puzzle/
+- Medium, for explaining how Node.js works: https://medium.com/jspoint/a-simple-guide-to-load-c-c-code-into-node-js-javascript-applications-3fcccf54fd32
+- Puzzle Mobile, for quickly using Nonogram grids: https://www.puzzles-mobile.com/nonograms/random/10x10
 
 ## Licensing
 
