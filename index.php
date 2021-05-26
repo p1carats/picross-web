@@ -15,7 +15,7 @@
     <!-- JS -->
     <script src="assets/js/script.js"></script>
   </head>
-  <body>
+  <body class="default">
     <?php include "includes/header.php"; ?>
     <main>
       <?php include "app/page.php"; ?>
