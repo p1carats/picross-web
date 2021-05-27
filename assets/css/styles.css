@@ -1,11 +1,8 @@
 /* header */
-body {
+body{
   margin: 0;
   width: 100%;
   font-family: "Lato", sans-serif;
-}
-
-.default{
   background-image: url("../img/header.jpg");
   background-size: cover;
 }
@@ -104,18 +101,6 @@ main h1 {
 h2 {
   text-align: center;
   color: white;
-}
-
-body.green {
-  background-image: url("../img/header.jpg");
-}
- 
-body.night {
-  background: black;
-}
- 
-body.beach {
-  background: yellow;
 }
 
 .story {
@@ -273,9 +258,6 @@ table{
 .dot {
   width: 2em;
   height: 2em;
-}
-
-.dot {
   background-color: #ccc;
   border-radius: 0;
   cursor: pointer;
@@ -283,6 +265,10 @@ table{
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease; 
   -o-transition: all 0.5s ease; 
+}
+
+.dot p{
+  color:transparent;
 }
 
 .legendC td {
@@ -331,6 +317,12 @@ table{
   background-color: rgb(158, 91, 15);
 }
 
+#info{
+  color: transparent;
+  position: absolute;
+  left: 78%;
+  bottom: 47%;
+}
 
 /* chrono */
 input[type=text] {
