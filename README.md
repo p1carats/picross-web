@@ -48,6 +48,10 @@ May 26th:
   - Added buttons on the Game page to change the background image of the website. The players has now three options: "Day Theme" which is default, "Night Theme", and "Beach Theme"
   - Started the creation of a database to communicate and save information between the website and the program, such as the scoreboard and the generated games.
 
+May 27th:
+  - Continued the connection between the website and the database.
+  - Updated the Game page with PHP and JS code to make it more efficient and connected to a solution stored in the database as a test.
+
 ## Bibliography
 
 Main source to help with errors in PHP, CSS and JavaScript:
@@ -74,12 +78,16 @@ Websites for documentation on HTML, CSS, PHP and JS declarations:
 - Christopher Aue, for helping with vertical alignment in CSS: https://christopheraue.net/design/vertical-align
 - CSS Tricks, for helping with the aesthetic of the game grid: https://css-tricks.com/rotated-table-column-headers/
 - Wikipedia, and PuzzleMuseum, for the story of the Nonogram: https://www.puzzlemuseum.com/griddler/gridhist.htm
+- CodeS SourceS, for helping with the chronometer: https://codes-sources.commentcamarche.net/source/23092-chronometre-dynamique
 - Font Awesome, for icons: https://fontawesome.com/
 - Google Fonts, for fonts: https://fonts.google.com/specimen/Sanchez?preview.text=Animal%20Crossing&preview.text_type=custom&query=sanchez
 - GrandGamersGuild, for clearly explaining how to solve a Nonogram: https://grandgamersguild.com/how-to-solve-picross-puzzle/
 - Medium, for explaining how Node.js works: https://medium.com/jspoint/a-simple-guide-to-load-c-c-code-into-node-js-javascript-applications-3fcccf54fd32
 - Puzzle Mobile, for quickly using Nonogram grids: https://www.puzzles-mobile.com/nonograms/random/10x10
-
+- StackExchange, for using JavaScript around a HTML Table: https://codereview.stackexchange.com/questions/242660/javascript-extract-data-from-html-table
+- EncodeDNA, for using JavaScript around a HTML Table as well: https://www.encodedna.com/javascript/how-to-read-data-from-html-table-using-javascript.htm
+- Dynamic Web Coding, for coding between PHP and JS: http://dyn-web.com/tutorials/php-js/scalar.php
+- 
 ## Licensing
 
 Licensed under [MIT](LICENSE).
