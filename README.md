@@ -15,6 +15,8 @@ May 28th:
   - Progressive transition of the website to MVC
   - Modification of the txt file taken as input by the game
   - Aesthetic changes to the project presentation file
+  - Progression on the Game page with graphic elements and dynamic elements around winning the game
+  - Progression on the Scoreboard game with the database.
 
 May 27th:
  - Continued the connection between the website and the database.
@@ -104,4 +106,10 @@ Some of the sources and resources used are cited below:
 - [StackExchange](https://codereview.stackexchange.com/questions/242660/javascript-extract-data-from-html-table), for using JavaScript around a HTML Table
 - [EncodeDNA](https://www.encodedna.com/javascript/how-to-read-data-from-html-table-using-javascript.htm), for using JavaScript around a HTML Table as well
 - [Dynamic Web Coding](http://dyn-web.com/tutorials/php-js/scalar.php), for coding between PHP and JS
+- [TheAmplituhedron](https://www.theamplituhedron.com/projects/JavaScript-Game-Snake-with-ScoreBoard/), for helping with handling scores between the website and a database.
+- [MySQLTutorial](https://www.mysqltutorial.org/mysql-insert-statement.aspx), for a better understanding of how to insert values to a database with values
+- [TutorialRepublic](https://www.tutorialrepublic.com/php-tutorial/php-mysql-insert-query.php), also for inserting values to a database
+- [Colorhexa](https://www.colorhexa.com/), for color hex codes
+- [Dottoro](http://help.dottoro.com/ljbtecpw.php), for a JavaScript variable: webkitTextStroke
+- [freeCodeCamp](https://www.freecodecamp.org/news/how-to-disappear-completely-2f23ddb14835/), for giving ideas of how to make a text disappear
 - [Stack Overflow](https://stackoverflow.com) (various forums on different errors) and [W3School](https://www.w3schools.com) (for various CSS and HTML elements)
