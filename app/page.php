@@ -13,6 +13,9 @@
 			case "tutorial":
         include("views/tutorial.php");
 			  break;
+			case "scoreboard":
+		include("views/scoreboard.php");
+			  break;
 			default:
 				include("views/error.php");
 				break;
