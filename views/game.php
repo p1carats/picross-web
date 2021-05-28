@@ -1,19 +1,4 @@
-<!-- Getting data of the game back from the database -->
-<?php 
-  // Preparing the selection
-  $req = $bdd->prepare('SELECT legendC, legendL, solution FROM grid');
-  // Execution
-  $req->execute();
-  // Recovery of the data
-  $data = $req->fetchAll();
-  // Separation of the different datas needed
-  foreach($data as $datarow) {
-    $legendC = $datarow['legendC'];
-    $legendL = $datarow['legendL'];
-    $grid = $datarow['solution'];
-  }
-?>
-
+<?php require "../app/game.php" ?>
 <div id="game">
   <!-- Game page, the most important page which contains... the game. -->
   <!-- Buttons to change the theme of the page -->
@@ -176,7 +161,7 @@
     </tr>
   </table>
 
-  <!-- 
+  <!-- soon
   <button class="solveBtton"type="button">
         <a href="#">Solve for me!</a>
   </button> -->

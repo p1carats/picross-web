@@ -55,7 +55,7 @@
 
   <!-- php to send the program file to the database in order to use it right after -->
   <?php
-  $path = __DIR__.'/picross.txt';
+  $path = "../picross.txt";
   $query = "LOAD DATA LOCAL INFILE '$path' INTO TABLE grid FIELDS TERMINATED BY '\n'";
   ?>
 </div>

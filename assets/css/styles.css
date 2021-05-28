@@ -1,5 +1,5 @@
 /* header */
-body{
+body {
   margin: 0;
   width: 100%;
   font-family: "Lato", sans-serif;
@@ -224,16 +224,16 @@ button a {
   text-align: center;
 }
 
-.division .optnGrille img{
+.division .optnGrille img {
   width: 50%;
   margin-left: 15px;
 }
 
-.optnGrille1{
+.optnGrille1 {
   font-size: 30px;
 }
 
-.optnGrille2{
+.optnGrille2 {
   background-image: url("../img/footer.jpg");
   background-size: cover;
   outline: 2px solid brown;
@@ -268,7 +268,7 @@ table{
 }
 
 tr .dot{
-  color:transparent;
+  color: transparent;
   font-size: 0;
 }
 
@@ -304,7 +304,7 @@ tr .dot{
   padding: 0 20px;
   font-size: 1.5rem;
   text-align: center;
-  font-family: 'Bahiana', cursive;
+  font-family: "Bahiana", cursive;
   position: absolute;
   left: 78%;
   bottom: 47%;
@@ -324,13 +324,13 @@ tr .dot{
   padding: 0 12px;
   font-size: 20px;
   text-align: center;
-  font-family: 'Bahiana', cursive;
+  font-family: "Bahiana", cursive;
   border-radius: 10px;
-  position:absolute;
+  position: absolute;
   left: 78%;
   bottom: 50%;
   cursor:pointer;
-  position:absolute;
+  position: absolute;
   bottom: 80%;
   background-image: linear-gradient(to top left,rgba(0, 0, 0, .2),rgba(0, 0, 0, .2) 30%,rgba(0, 0, 0, 0));
   box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),inset -2px -2px 3px rgba(0, 0, 0, .6);
@@ -354,34 +354,34 @@ tr .dot{
 /* chrono */
 input[type=text] {
   text-align: center;
-  font-family: 'Bahiana', cursive;
+  font-family: "Bahiana", cursive;
   background-image: url("../img/footer.jpg");
-  border:none;
+  border: none;
   font-size: 30px;
   position: absolute;
-  left:75%;
+  left: 75%;
   border: 2px solid brown;
-  border-style:ridge;
+  border-style: ridge;
 }
 
-/* Scoreboard */
-#score{
+/* scoreboard */
+#score {
   font-size: 25px;
   color: white;
   text-align: center;
   background-image: url("../img/footer.jpg");
-  margin-left:auto;
+  margin-left: auto;
   margin-right: auto;
   border-radius: 1rem;
   width: 30.5%;
 }
 
-#score th{
+#score th {
   border-bottom: 5px solid black;
 }
 
 /* error page */
-#error{
+#error {
   color: white;
 }
 
