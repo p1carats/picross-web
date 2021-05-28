@@ -1,9 +1,11 @@
 <div id="tutorial">
+  <!-- Tutorial page, to give tips and a summary of how the game works -->
   <h1>Anisen Crossing</h1>
   <h2 class="titreAC">Tutorial</h2>
   <section class="story">
     <h3>Learn how to play Nonogram!</h3>
     <p>The object of a picross puzzle is to darken all the correct squares in the grid to reveal a hidden image, using the information given by the numbers around the grid.</p>
+    <!-- Images used with captions -->
     <div class="imagetuto">
       <figure>
         <img src="assets/img/picrossPASFINI.png" alt="Picture of a puzzle at the start"></img>
@@ -27,6 +29,7 @@
     </div> 
     <p>There should always be one unique solution, and you should never need to take a guess on one square to solve it, as the information on the top and on the left should coincide with each other.</p>
   </section>
+  <!-- Buttons to navigate through pages -->
   <button class="homeBtton"type="button">
     <a href="?page=home">Home</a>
   </button>

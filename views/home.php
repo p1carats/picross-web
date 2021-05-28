@@ -1,4 +1,5 @@
 <div id="home">
+  <!-- Home page, contains a little story and links to the tutorial and the settings of the game -->
   <h1>Anisen Crossing</h1>
   <h2>Take a break and play one of the most famous games in the world:<br>Nonogram !</h2>
   <section class="story">
@@ -8,6 +9,7 @@
     <p>In 1989, James Dalgety discovers this new puzzle form and make an arrangement with Non Ishida to commercialise her designs throughout the world outside Japan, inventing the name Nonogram after "Non" Ishida and Dia"gram".</p>
     <p>They were an immediate success and are still widely spread today.</p>
   </section>
+  <!-- Buttons to navigate through pages -->
   <button class="tutoBtton"type="button">
     <a href="?page=tutorial">Tutorial</a>
   </button>
