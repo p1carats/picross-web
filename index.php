@@ -1,6 +1,5 @@
-<?php
-require 'includes/dbconnect.php';
-?>
+<!-- Database connection -->
+<?php require 'includes/dbconnect.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
