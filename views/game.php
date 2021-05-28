@@ -1,25 +1,27 @@
 <!-- Getting data of the game back from the database -->
 <?php 
   // Preparing the selection
-  $req = $bdd->prepare('SELECT LegendC, LegendL, solution FROM grid');
+  $req = $bdd->prepare('SELECT legendC, legendL, solution FROM grid');
   // Execution
   $req->execute();
   // Recovery of the data
   $data = $req->fetchAll();
   // Separation of the different datas needed
   foreach($data as $datarow) {
+    $legendC = $datarow['legendC'];
+    $legendL = $datarow['legendL'];
     $grid = $datarow['solution'];
   }
 ?>
 
 <div id="game">
   <!-- Game page, the most important page which contains... the game. -->
-  <h1>Play Anisen Crossing</h1>
   <!-- Buttons to change the theme of the page -->
-  <button type="button" class="themeBtton" onclick="day()">Day Theme</button>
-  <button type="button" class="themeBtton" onclick="night()">Night Theme</button>
-  <button type="button" class="themeBtton" onclick="beach()">Beach Theme</button>
-
+  <button type="button" class="themeBtton1" onclick="day()">Day Theme</button>
+  <button type="button" class="themeBtton2" onclick="night()">Night Theme</button>
+  <button type="button" class="themeBtton3" onclick="beach()">Beach Theme</button>
+  <h1>Play Anisen Crossing</h1>
+  
   <!-- Chronometer -->
   <form action="" method="post" name="formu" id="formu">
     <p> 
@@ -36,7 +38,7 @@
       <td><div class="box">3</div><div class="box">1</div><div class="box">3</div><div class="box"></div><div class="box"></div></td>
       <td><div class="box">1</div><div class="box">3</div><div class="box"></div><div class="box"></div><div class="box"></div></td>
       <td><div class="box">2</div><div class="box">3</div><div class="box"></div><div class="box"></div><div class="box"></div></td>
-      <td><div class="box">2</div><div class="box">1</div><div class="box">3</div><div class="box"></div><div class="box"></div></td>
+      <td><div class="box">2</div><div class="box">1</div><div class="box">2</div><div class="box"></div><div class="box"></div></td>
       <td><div class="box">3</div><div class="box">1</div><div class="box">2</div><div class="box"></div><div class="box"></div></td>
       <td><div class="box">2</div><div class="box">2</div><div class="box"></div><div class="box"></div><div class="box"></div></td>
       <td><div class="box">2</div><div class="box">2</div><div class="box"></div><div class="box"></div><div class="box"></div></td>
@@ -174,10 +176,10 @@
     </tr>
   </table>
 
-  <!-- TO DO -->
+  <!-- 
   <button class="solveBtton"type="button">
-        <a href="?page=scoreboard">Solve for me!</a>
-  </button>
+        <a href="#">Solve for me!</a>
+  </button> -->
 </div>
 
 <script>
@@ -234,6 +236,12 @@ function TableData() {
   if(infoGrid == "<?php echo $grid ?>"){
     alert("Game won!");
     window.clearTimeout(chrono); // the chronometer ends as well
+    var temps = document.getElementById("heure").value;
+    var nom = prompt("Please enter your name! (if you don't, your score won't be saved)", "");
+    if (nom != null || nom != "") {
+      var text="this is a debug text";
+    }
+    window.location.href='?page=scoreboard';
   }
 }
 
@@ -241,15 +249,18 @@ function TableData() {
 function day(){
   document.body.style.backgroundImage= "url('assets/img/header.jpg')";
   document.body.style.color= "black";
+  document.body.style.webkitTextStroke = "0px";
 }
 
 function night(){
   document.body.style.backgroundImage= "url('assets/img/night.jpg')";
   document.body.style.color= "white";
+  document.body.style.webkitTextStroke = "0.5px black";
 }
 
 function beach(){
   document.body.style.backgroundImage= "url('assets/img/beach.jpg')";
   document.body.style.color= "black";
+  document.body.style.webkitTextStroke = "0px";
 }
 </script>
