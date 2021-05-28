@@ -51,6 +51,8 @@ May 26th:
 May 27th:
   - Continued the connection between the website and the database.
   - Updated the Game page with PHP and JS code to make it more efficient and connected to a solution stored in the database as a test.
+  - Added clearer comments in the code of every page of the website.
+  - Started creating the Scoreboard page, directly linked to the game page after winning the nonogram.
 
 ## Bibliography
 
