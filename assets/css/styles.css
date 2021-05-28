@@ -267,8 +267,9 @@ table{
   -o-transition: all 0.5s ease; 
 }
 
-.dot p{
+tr .dot{
   color:transparent;
+  font-size: 0;
 }
 
 .legendC td {
@@ -317,11 +318,37 @@ table{
   background-color: rgb(158, 91, 15);
 }
 
-#info{
-  color: transparent;
-  position: absolute;
+.themeBtton1, .themeBtton2, .themeBtton3 {
+  border: 0;
+  line-height: 2;
+  padding: 0 12px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Bahiana', cursive;
+  border-radius: 10px;
+  position:absolute;
   left: 78%;
-  bottom: 47%;
+  bottom: 50%;
+  cursor:pointer;
+  position:absolute;
+  bottom: 80%;
+  background-image: linear-gradient(to top left,rgba(0, 0, 0, .2),rgba(0, 0, 0, .2) 30%,rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.themeBtton1 {
+  background-color: rgb(89, 214, 31);
+  left: 73%;
+}
+
+.themeBtton2 {
+  background-color: rgb(31, 89, 214);
+  left: 80%;
+}
+
+.themeBtton3 {
+  background-color: #e3c378;
+  left: 88%;
 }
 
 /* chrono */
@@ -333,6 +360,24 @@ input[type=text] {
   font-size: 30px;
   position: absolute;
   left:75%;
+  border: 2px solid brown;
+  border-style:ridge;
+}
+
+/* Scoreboard */
+#score{
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  background-image: url("../img/footer.jpg");
+  margin-left:auto;
+  margin-right: auto;
+  border-radius: 1rem;
+  width: 30.5%;
+}
+
+#score th{
+  border-bottom: 5px solid black;
 }
 
 /* error page */
