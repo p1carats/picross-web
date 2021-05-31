@@ -1,4 +1,4 @@
-<?php require "../app/game.php" ?>
+<?php require "./app/game.php" ?>
 <div id="game">
   <!-- Game page, the most important page which contains... the game. -->
   <!-- Buttons to change the theme of the page -->
