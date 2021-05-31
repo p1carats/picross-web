@@ -9,7 +9,8 @@
     <!-- CSS file -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- Google Font -->
-    <style>@import url("https://fonts.googleapis.com/css2?family=Lato&family=Sanchez&?family=Bahiana&display=swap");</style>  
+    <style>@import url("https://fonts.googleapis.com/css2?family=Lato&family=Sanchez&display=swap");</style>  
+    <style>@import url('https://fonts.googleapis.com/css2?family=Bahiana&display=swap');</style> 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7d213dfca0.js" crossorigin="anonymous"></script>
     <!-- JS -->
