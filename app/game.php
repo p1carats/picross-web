@@ -12,3 +12,4 @@ foreach($data as $datarow) {
   $legendL = $datarow['legendL'];
   $grid = $datarow['solution'];
 }
+?>
