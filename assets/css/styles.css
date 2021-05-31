@@ -351,6 +351,10 @@ tr .dot{
   left: 88%;
 }
 
+#hiddentemps{
+  visibility: hidden;
+}
+
 /* chrono */
 input[type=text] {
   text-align: center;
@@ -358,10 +362,14 @@ input[type=text] {
   background-image: url("../img/footer.jpg");
   border: none;
   font-size: 30px;
-  position: absolute;
+  position: relative;
   left: 75%;
   border: 2px solid brown;
   border-style: ridge;
+}
+
+input[name=seco] {
+  visibility: hidden;
 }
 
 /* scoreboard */
