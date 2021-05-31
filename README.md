@@ -11,6 +11,11 @@ Web interface used to play with [piC11ross](https://github.com/inspwastaken/piC1
 
 ## Changelog
 
+May 31th:
+  - Refactor grid display to make grid's size modular using txt options
+  - Improved database/scoreboard link
+  - Make scoreboard great again (fully working now)
+
 May 28th:
   - Progressive transition of the website to MVC
   - Modification of the txt file taken as input by the game
