@@ -304,7 +304,7 @@ tr .dot{
   padding: 0 20px;
   font-size: 1.5rem;
   text-align: center;
-  font-family: "Bahiana", cursive;
+  font-family: 'Bahiana', cursive;
   position: absolute;
   left: 78%;
   bottom: 47%;
@@ -324,7 +324,7 @@ tr .dot{
   padding: 0 12px;
   font-size: 20px;
   text-align: center;
-  font-family: "Bahiana", cursive;
+  font-family: 'Bahiana', cursive;
   border-radius: 10px;
   position: absolute;
   left: 78%;
@@ -354,7 +354,7 @@ tr .dot{
 /* chrono */
 input[type=text] {
   text-align: center;
-  font-family: "Bahiana", cursive;
+  font-family: 'Bahiana', cursive;
   background-image: url("../img/footer.jpg");
   border: none;
   font-size: 30px;
