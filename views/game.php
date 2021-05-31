@@ -10,7 +10,7 @@
   <!-- Chronometer -->
   <form action="" method="post" name="formu" id="formu">
     <p> 
-      <input name="heure" type="text" id="heure" value="00 : 00 : 00">
+    <input name="heure" type="text" id="heure" value="00 : 00 : 00"><input name="seco" type="text" id="secondes" value="00">
     </p>
   </form>
 
@@ -18,149 +18,34 @@
   <table id="grid">
     <tr class="legendC">
       <td class="null"></td>
-      <td><div class="box">4</div><div class="box">3</div><div class="box"></div><div class="box"></div><div class="box"></div></td>
-      <td><div class="box">2</div><div class="box">3</div><div class="box"></div><div class="box"></div><div class="box"></div></td>
-      <td><div class="box">3</div><div class="box">1</div><div class="box">3</div><div class="box"></div><div class="box"></div></td>
-      <td><div class="box">1</div><div class="box">3</div><div class="box"></div><div class="box"></div><div class="box"></div></td>
-      <td><div class="box">2</div><div class="box">3</div><div class="box"></div><div class="box"></div><div class="box"></div></td>
-      <td><div class="box">2</div><div class="box">1</div><div class="box">2</div><div class="box"></div><div class="box"></div></td>
-      <td><div class="box">3</div><div class="box">1</div><div class="box">2</div><div class="box"></div><div class="box"></div></td>
-      <td><div class="box">2</div><div class="box">2</div><div class="box"></div><div class="box"></div><div class="box"></div></td>
-      <td><div class="box">2</div><div class="box">2</div><div class="box"></div><div class="box"></div><div class="box"></div></td>
-      <td><div class="box">3</div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div></td>
+      <?php 
+      for($i=0; $i<count($legendsC);$i++){
+        echo '<td>';
+        $indices = explode(",", $legendsC[$i]);
+        for($j=0;$j<count($indices);$j++){
+          echo '<div class="box">'.$indices[$j].'</div>';
+        }
+        echo '</td>';
+      } ?>
     </tr>
-    <tr>
-      <td class="legendL">8</td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-    </tr>
-    <tr>
-      <td class="legendL">1 6</td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-    </tr>
-    <tr>
-      <td class="legendL">3 1 1</td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-    </tr>
-    <tr>
-      <td class="legendL">2</td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-    </tr>
-    <tr>
-      <td class="legendL">1</td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td  class="dot"></td>
-    </tr>
-    <tr>
-      <td class="legendL">1 1</td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-    </tr>
-    <tr>
-      <td class="legendL">2</td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-    </tr>
-    <tr>
-      <td class="legendL">5</td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-    </tr>
-    <tr>
-    <td class="legendL">9</td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-    </tr>
-    <tr>
-      <td class="legendL">9</td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-      <td class="dot"></td>
-    </tr>
+      <?php 
+        for($i=0; $i<count($legendsL);$i++){
+          $indices = explode(",", $legendsL[$i]);
+          echo '<tr>';
+          echo '<td class="legendL">';
+          for($j=0;$j<count($indices);$j++){
+            echo $indices[$j];
+            echo ' ';
+          }
+          echo '</td>';
+          for($k=0;$k<$dimension;$k++){
+            echo '<td class="dot">0</td>';
+          }
+          echo '</tr>';
+        }
+      ?>
   </table>
-
+  <p id="hiddentemps"></p>
   <!-- soon
   <button class="solveBtton"type="button">
         <a href="#">Solve for me!</a>
@@ -221,7 +106,9 @@ function TableData() {
   if(infoGrid == "<?php echo $grid ?>"){
     alert("Game won!");
     window.clearTimeout(chrono); // the chronometer ends as well
-    var temps = document.getElementById("heure").value;
+    <?php require "./app/scoreboard.php";
+    /* To do here: récuperer la valeur temps dans l'input, récupérer les valeurs temps de la base de données et comparer. */
+    ?>
     var nom = prompt("Please enter your name! (if you don't, your score won't be saved)", "");
     if (nom != null || nom != "") {
       var text="this is a debug text";

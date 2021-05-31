@@ -1,7 +1,7 @@
-<?php require "./app/scoreboard.php" ?>
+<?php require "./app/scoreboard.php"; ?>
 <div id="scoreboard">
   <h1>Anisen Crossing</h1>
-  <h2 class="titreAC">Scoreboard (10x10)</h2>
+  <?php echo '<h2 class="titreAC">Scoreboard ('.$dimension.'x'.$dimension.')</h2>'; ?>
   <table id="score">
     <tr>
 			<th>Username</th>

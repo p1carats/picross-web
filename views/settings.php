@@ -1,5 +1,10 @@
 <div id="settings">
-  <!-- Settings, which lets the player choose between some options to generate the grid -->
+<?php
+  $path = "C:/xampp/htdocs/picross-web-master-01/picross.txt";
+  $query = $bdd->prepare("DELETE FROM grid");
+  $query->execute();
+  ?>  
+<!-- Settings, which lets the player choose between some options to generate the grid -->
   <h1>Anisen Crossing</h1>
   <div class="division">
     <section>
@@ -13,15 +18,6 @@
         <label for="15"><img src="assets/img/15x15.png" alt="15x15 Grid"></img>15x15</label>
         <input type="radio" id="20" name="grille" value="20">
         <label for="20"><img src="assets/img/20x20.png" alt="20x20 Grid"></img>20x20</label>
-      </div>
-      <h3>Difficulty</h3>
-      <div class="optnGrille1">
-        <input type="radio" id="easy" name="difficulty" value="easy" checked>
-        <label for="easy"><i class="far fa-grin"></i>easy</label>
-        <input type="radio" id="medium" name="difficulty" value="medium">
-        <label for="medium"><i class="far fa-meh"></i>medium</label>
-        <input type="radio" id="hard" name="difficulty" value="hard">
-        <label for="hard"><i class="far fa-angry"></i>hard</label>
       </div>
       <!-- Button to start the generator program (TO DO) -->
       <button class="gameBtton"type="button">
@@ -55,7 +51,8 @@
 
   <!-- php to send the program file to the database in order to use it right after -->
   <?php
-  $path = "../picross.txt";
-  $query = "LOAD DATA LOCAL INFILE '$path' INTO TABLE grid FIELDS TERMINATED BY '\n'";
+  $path = "C:/xampp/htdocs/picross-web-master-01/picross.txt";
+  $query = $bdd->prepare("LOAD DATA INFILE '$path' INTO TABLE grid FIELDS TERMINATED BY '\n'");
+  $query->execute();
   ?>
 </div>
