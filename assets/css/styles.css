@@ -368,7 +368,7 @@ input[type=text] {
   border-style: ridge;
 }
 
-input[name=seco] {
+input[name=seco]{
   visibility: hidden;
 }
 
