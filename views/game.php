@@ -106,8 +106,8 @@ function TableData() {
   if(infoGrid == "<?php echo $grid ?>"){
     alert("Game won!");
     window.clearTimeout(chrono); // the chronometer ends as well
+    var temps = document.getElementById("secondes").value; 
     <?php require "./app/scoreboard.php";
-    /* To do here: récuperer la valeur temps dans l'input, récupérer les valeurs temps de la base de données et comparer. */
     ?>
     var nom = prompt("Please enter your name! (if you don't, your score won't be saved)", "");
     if (nom != null || nom != "") {
