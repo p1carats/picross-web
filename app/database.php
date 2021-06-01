@@ -12,3 +12,4 @@ try {
 }
 
 //echo "Connexion BDD réussie!";
+?>

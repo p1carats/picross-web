@@ -17,4 +17,5 @@
 // Execution
 $req->execute();
 // Recovery of the data
-$data = $req->fetchAll(); ?>
+$data = $req->fetchAll(); 
+?>
