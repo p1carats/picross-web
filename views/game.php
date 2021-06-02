@@ -1,4 +1,4 @@
-<?php require "./app/game.php" ?>
+<?php require "./app/game.php";?>
 <div id="game">
   <!-- Game page, the most important page which contains... the game. -->
   <!-- Buttons to change the theme of the page -->
@@ -45,7 +45,6 @@
         }
       ?>
   </table>
-  <p id="hiddentemps"></p>
   <!-- soon
   <button class="solveBtton"type="button">
         <a href="#">Solve for me!</a>
@@ -107,12 +106,9 @@ function TableData() {
     alert("Game won!");
     window.clearTimeout(chrono); // the chronometer ends as well
     var temps = document.getElementById("secondes").value; 
-    <?php require "./app/scoreboard.php";
-    ?>
-    var nom = prompt("Please enter your name! (if you don't, your score won't be saved)", "");
-    if (nom != null || nom != "") {
-      var text="this is a debug text";
-    }
+    var nom = prompt("Please enter your name! (if you don't, a default username will be registered instead.)", "Xx_D4rKRand0m_xX");
+    document.cookie = "nom" + "=" + nom;
+    document.cookie = "temps" + "=" + temps;
     window.location.href='?page=scoreboard';
   }
 }
