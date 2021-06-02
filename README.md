@@ -10,6 +10,11 @@ Web interface used to play with [piC11ross](https://github.com/inspwastaken/piC1
  - And much more!
 
 ## Changelog
+June 2nd:
+  - Finalized link between the game and the scoreboard, now totally functional with records and usernames
+  - Added first version of the generator/solver program executable to the website
+  - Successfully linked the executable program with game page and database
+  - Started working on the dynamic options on settings page
 
 June 1st:
   - Improved game/scoreboard/database link
@@ -124,7 +129,10 @@ Some of the sources and resources used are cited below:
 - [Dottoro](http://help.dottoro.com/ljbtecpw.php), for a JavaScript variable: webkitTextStroke
 - [freeCodeCamp](https://www.freecodecamp.org/news/how-to-disappear-completely-2f23ddb14835/), for giving ideas of how to make a text disappear
 - [php](https://www.php.net/manual/en/reserved.variables.session.php), about the $_ SESSION variable
+- also [php](https://www.php.net/manual/en/function.setcookie.php), for the setcookie() function in PHP
 - [SitePoint forums](https://www.sitepoint.com/community/t/getting-value-of-javascript-variable-into-a-database/44417), to work around JS values and databases
 - [John Dugan](https://john-dugan.com/dump-and-restore-mysql-databases-in-windows/), for SQL Database dumps
 - [Meera Academy](https://meeraacademy.com/php-isset-function-check-if-variable-is-set/), for isset() function in PHP
+- [ProgrammingHE](https://programminghead.com/how-to-link-submit-button-to-another-page-in-html.php), for helping with submit buttons
+- 
 - [Stack Overflow](https://stackoverflow.com) (various forums on different errors) and [W3School](https://www.w3schools.com) (for various CSS and HTML elements)
