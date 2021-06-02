@@ -11,6 +11,10 @@ Web interface used to play with [piC11ross](https://github.com/inspwastaken/piC1
 
 ## Changelog
 
+June 1st:
+  - Improved game/scoreboard/database link
+  - Progression on linking the game program in C# and the website
+
 May 31th:
   - Refactor grid display to make grid's size modular using txt options
   - Improved database/scoreboard link
@@ -88,6 +92,8 @@ Some of the sources and resources used are cited below:
 - [Getting started with the web, JavaScript Basics](https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/JavaScript_basics), MDN Web Docs
 - [Getting started with the web, CSS Basics](https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/CSS_basics), MDN Web Docs
 - [Buttons and input elements, HTML documentation](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Button), MDN Web Docs
+- [Document.cookie](https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie), MDN Web Docs
+- [HTMLFormElement.submit()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit), MDN Web Docs
 - MySQL official doc: 
   - [for a better understanding of how works a database like MySQL](https://dev.mysql.com/doc/mysql-getting-started/en)
   - [for particularly helping on "LOAD DATA LOCAL INFILE" code](https://dev.mysql.com/doc/refman/8.0/en/load-data.html)
@@ -117,4 +123,8 @@ Some of the sources and resources used are cited below:
 - [Colorhexa](https://www.colorhexa.com/), for color hex codes
 - [Dottoro](http://help.dottoro.com/ljbtecpw.php), for a JavaScript variable: webkitTextStroke
 - [freeCodeCamp](https://www.freecodecamp.org/news/how-to-disappear-completely-2f23ddb14835/), for giving ideas of how to make a text disappear
+- [php](https://www.php.net/manual/en/reserved.variables.session.php), about the $_ SESSION variable
+- [SitePoint forums](https://www.sitepoint.com/community/t/getting-value-of-javascript-variable-into-a-database/44417), to work around JS values and databases
+- [John Dugan](https://john-dugan.com/dump-and-restore-mysql-databases-in-windows/), for SQL Database dumps
+- [Meera Academy](https://meeraacademy.com/php-isset-function-check-if-variable-is-set/), for isset() function in PHP
 - [Stack Overflow](https://stackoverflow.com) (various forums on different errors) and [W3School](https://www.w3schools.com) (for various CSS and HTML elements)
