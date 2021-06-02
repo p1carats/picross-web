@@ -3,6 +3,11 @@
     $nom1 = $_COOKIE['nom'];
     $temps1 = $_COOKIE['temps'];
     switch($dimension){
+    case "5":
+        // Preparing the selection
+        $req = $bdd->prepare('SELECT nom, temps FROM scoreboard5a ORDER BY temps');
+        $sel = $bdd->prepare("INSERT INTO scoreboard5a (nom, temps) VALUES ('$nom1', '$temps1')");
+        break;
     case "10":
         // Preparing the selection
         $req = $bdd->prepare('SELECT nom, temps FROM scoreboard10a ORDER BY temps');
