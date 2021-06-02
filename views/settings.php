@@ -1,6 +1,5 @@
 <div id="settings">
 <?php
-  $path = "C:/xampp/htdocs/picross-web-master-01/picross.txt";
   $query = $bdd->prepare("DELETE FROM grid");
   $query->execute();
   ?>  
@@ -11,18 +10,18 @@
       <h2 class="titreAC">Automatic generation (random)</h2>
       <!-- Here the generation will be random, only the size and the difficulty of the grid is needed -->
       <h3>Size of the grid</h3>
-      <div class="optnGrille">
-        <input type="radio" id="10" name="grille" value="10" checked>
-        <label for="10"><img src="assets/img/10x10.png" alt="10x10 Grid"></img>10x10</label>
+      <form class="optnGrille">
+        <input type="radio" id="5" name="grille" value="5" checked>
+        <label class="grille" for="5"><img src="assets/img/5x5.png" alt="5x5 Grid"></img>5x5</label>
+        <input type="radio" id="10" name="grille" value="10">
+        <label class="grille" for="10"><img src="assets/img/10x10.png" alt="10x10 Grid"></img>10x10</label>
         <input type="radio" id="15" name="grille" value="15">
-        <label for="15"><img src="assets/img/15x15.png" alt="15x15 Grid"></img>15x15</label>
-        <input type="radio" id="20" name="grille" value="20">
-        <label for="20"><img src="assets/img/20x20.png" alt="20x20 Grid"></img>20x20</label>
-      </div>
+        <label class="grille" for="15"><img src="assets/img/15x15.png" alt="15x15 Grid"></img>15x15</label>
+      </form>
+      
       <!-- Button to start the generator program (TO DO) -->
       <button class="gameBtton"type="button">
         <a href="?page=game">Go!</a>
-      </button>
     </section>
 
     <section>
@@ -34,25 +33,18 @@
         <input type="file" id="UpImg" name="UpImg" accept="image/*">
       </div>
       <h3>Size of the grid</h3>
-      <div class="optnGrille">
-        <input type="radio" id="10" name="grille" value="10" checked>
-        <label for="10"><img src="assets/img/10x10.png" alt="10x10 Grid"></img>10x10</label>
+      <form class="optnGrille1">
+        <input type="radio" id="5" name="grille" value="5" checked>
+        <label class="grille" for="5"><img src="assets/img/5x5.png" alt="5x5 Grid"></img>5x5</label>
+        <input type="radio" id="10" name="grille" value="10">
+        <label class="grille" for="10"><img src="assets/img/10x10.png" alt="10x10 Grid"></img>10x10</label>
         <input type="radio" id="15" name="grille" value="15">
-        <label for="15"><img src="assets/img/15x15.png" alt="15x15 Grid"></img>15x15</label>
-        <input type="radio" id="20" name="grille" value="20">
-        <label for="20"><img src="assets/img/20x20.png" alt="20x20 Grid"></img>20x20</label>
-      </div>
+        <label class="grille" for="15"><img src="assets/img/15x15.png" alt="15x15 Grid"></img>15x15</label>
+        </form>
       <!-- Button to start the generator program (TO DO) -->
       <button class="gameBtton"type="button">
         <a href="?page=game">Go!</a>
       </button>
     </section>
   </div>
-
-  <!-- php to send the program file to the database in order to use it right after -->
-  <?php
-  $path = "C:/xampp/htdocs/picross-web-master-01/picross.txt";
-  $query = $bdd->prepare("LOAD DATA INFILE '$path' INTO TABLE grid FIELDS TERMINATED BY '\n'");
-  $query->execute();
-  ?>
 </div>

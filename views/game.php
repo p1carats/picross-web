@@ -1,4 +1,18 @@
-<?php require "./app/game.php";?>
+<?php 
+// Delete all preexisting grids from database
+$query = $bdd->prepare("DELETE FROM grid");
+$query->execute(); 
+
+// Execute game with said dimension
+exec("C:/xampp/htdocs/picross-web-master-01/picross.exe -g 10");
+
+// Send created game to database
+$path = "C:/xampp/htdocs/picross-web-master-01/picross.txt";
+$query2 = $bdd->prepare("LOAD DATA INFILE '$path' INTO TABLE grid FIELDS TERMINATED BY '\n'");
+$query2->execute();
+
+require "./app/game.php";
+?>
 <div id="game">
   <!-- Game page, the most important page which contains... the game. -->
   <!-- Buttons to change the theme of the page -->
