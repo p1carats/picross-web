@@ -209,28 +209,47 @@ button a {
 }
 
 /* settings */
-.division, .optnGrille, .optnGrille1 {
+.division, .optnGrille, .optnGrille1{
+  margin:0;
+  padding:0;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
 }
 
-.optnGrille label, .optnGrille1 label{
+.division{
+  gap: 30px;
+}
+
+.grille{
+  cursor:pointer;
+  background-size:cover;
+  background-repeat:no-repeat;
+  display:inline-block;
+  width:180px;height:100px;
+  -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+      transition: all 100ms ease-in;
+  -webkit-filter: grayscale(.5) opacity(.9);
+    -moz-filter: grayscale(.5) opacity(.9);
+      filter: grayscale(.5) opacity(.9);
   background-image: url("../img/footer.jpg");
   outline: 2px solid brown;
   border-radius: 2rem;
-  display: inline-block;
   text-align: center;
 }
 
-.division .optnGrille img {
-  width: 50%;
-  margin-left: 15px;
+.grille:hover, .optnGrille input:checked + .grille, .optnGrille1 input:checked + .grille{
+  -webkit-filter: none;
+     -moz-filter: none;
+          filter: none;
 }
 
-.optnGrille1 {
-  font-size: 30px;
+.division .optnGrille img, .optnGrille1 img{
+  width: 50%;
 }
 
 .optnGrille2 {
@@ -349,10 +368,6 @@ tr .dot{
 .themeBtton3 {
   background-color: #e3c378;
   left: 88%;
-}
-
-#hiddentemps{
-  visibility: hidden;
 }
 
 /* chrono */
