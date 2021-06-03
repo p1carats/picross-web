@@ -4,7 +4,8 @@ $query = $bdd->prepare("DELETE FROM grid");
 $query->execute(); 
 
 // Execute game with said dimension
-exec("C:/xampp/htdocs/picross-web-master-01/picross.exe -g 10");
+$a = $_COOKIE['taille'];
+exec("C:/xampp/htdocs/picross-web-master-01/picross.exe -g $a");
 
 // Send created game to database
 $path = "C:/xampp/htdocs/picross-web-master-01/picross.txt";
@@ -13,18 +14,20 @@ $query2->execute();
 
 require "./app/game.php";
 ?>
+
 <div id="game">
   <!-- Game page, the most important page which contains... the game. -->
   <!-- Buttons to change the theme of the page -->
   <button type="button" class="themeBtton1" onclick="day()">Day Theme</button>
   <button type="button" class="themeBtton2" onclick="night()">Night Theme</button>
   <button type="button" class="themeBtton3" onclick="beach()">Beach Theme</button>
+
   <h1>Play Anisen Crossing</h1>
   
   <!-- Chronometer -->
   <form action="" method="post" name="formu" id="formu">
     <p> 
-    <input name="heure" type="text" id="heure" value="00 : 00 : 00"><input name="seco" type="text" id="secondes" value="00">
+    <input name="seco" type="text" id="secondes" value="00"><input name="heure" type="text" id="heure" value="00 : 00 : 00">
     </p>
   </form>
 
@@ -59,15 +62,33 @@ require "./app/game.php";
         }
       ?>
   </table>
-  <!-- soon
-  <button class="solveBtton"type="button">
-        <a href="#">Solve for me!</a>
-  </button> -->
+  <button class="solveBtton"type="button" onclick="solveGrid()">
+        <p>Solve for me!</p>
+  </button>
+  <button class="gameBtton replay"type="button">
+        <a href="?page=game">Generate another game!</a>
+    </button>
 </div>
 
 <script>
 // Making the chronometer start automatically once the page loads
 window.onload = Chrono();
+
+var JSGrid = "<?php echo $grid; ?>";
+let soluceGrid = '';
+for(let i = 0, count = 0; i < JSGrid.length; i++){
+  if(count >= <?php echo $dimension; ?>-1){
+    count = 0;
+    soluceGrid += JSGrid[i];
+    soluceGrid += '\n';
+  }
+  else{
+         count++;
+         soluceGrid += JSGrid[i];
+         soluceGrid += ' ';
+  }
+}
+
 
 // Selecting all the cells of the grid
 const buttons = document.querySelectorAll('td.dot');
@@ -118,31 +139,31 @@ function TableData() {
   // If the information stored is the same as the information from the database (the solution), then the game ends
   if(infoGrid == "<?php echo $grid ?>"){
     alert("Game won!");
-    window.clearTimeout(chrono); // the chronometer ends as well
-    var temps = document.getElementById("secondes").value; 
-    var nom = prompt("Please enter your name! (if you don't, a default username will be registered instead.)", "Xx_D4rKRand0m_xX");
-    document.cookie = "nom" + "=" + nom;
-    document.cookie = "temps" + "=" + temps;
-    window.location.href='?page=scoreboard';
+    window.clearTimeout(chrono); // the chronometer ends as well, to get back its value
+    if(document.getElementById("secondes").value != 0){
+      var temps = document.getElementById("secondes").value; 
+      var nom = prompt("Please enter your name! (if you don't, a default username will be registered instead.)", "Xx_D4rKRand0m_xX");
+      if(nom == '' || nom == null){
+        nom = 'Xx_D4rKRand0m_xX';
+      }
+      document.cookie = "nom" + "=" + nom; // get cookies of the name and the time to send to the scoreboard when the page loads
+      document.cookie = "temps" + "=" + temps;
+      window.location.href='?page=scoreboard';
+    }
+    else{
+      alert("You've completed the game while looking at the solution.\nYour score won't be saved.");
+    }
   }
 }
 
-/// themes
-function day(){
-  document.body.style.backgroundImage= "url('assets/img/header.jpg')";
-  document.body.style.color= "black";
-  document.body.style.webkitTextStroke = "0px";
+// Solver function linked to the button
+function solveGrid(){
+  alert("La solution de cette grille est:\n" + soluceGrid);
+  window.clearTimeout(chrono);
+  s=0;m=0;h=0;ss=0; 
+  window.status = '0 : 00 : 00'; 
+  document.formu.heure.value ='0 : 00 : 00';
+  document.formu.seco.value='0'+0;
 }
 
-function night(){
-  document.body.style.backgroundImage= "url('assets/img/night.jpg')";
-  document.body.style.color= "white";
-  document.body.style.webkitTextStroke = "0.5px black";
-}
-
-function beach(){
-  document.body.style.backgroundImage= "url('assets/img/beach.jpg')";
-  document.body.style.color= "black";
-  document.body.style.webkitTextStroke = "0px";
-}
 </script>

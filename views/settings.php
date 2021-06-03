@@ -1,8 +1,8 @@
-<div id="settings">
 <?php
   $query = $bdd->prepare("DELETE FROM grid");
   $query->execute();
-  ?>  
+?>  
+<div id="settings">
 <!-- Settings, which lets the player choose between some options to generate the grid -->
   <h1>Anisen Crossing</h1>
   <div class="division">
@@ -11,11 +11,11 @@
       <!-- Here the generation will be random, only the size and the difficulty of the grid is needed -->
       <h3>Size of the grid</h3>
       <form class="optnGrille">
-        <input type="radio" id="5" name="grille" value="5" checked>
+        <input type="radio" id="5" name="grille" value="5" checked onclick="setVal5()">
         <label class="grille" for="5"><img src="assets/img/5x5.png" alt="5x5 Grid"></img>5x5</label>
-        <input type="radio" id="10" name="grille" value="10">
+        <input type="radio" id="10" name="grille" value="10" onclick="setVal10()">
         <label class="grille" for="10"><img src="assets/img/10x10.png" alt="10x10 Grid"></img>10x10</label>
-        <input type="radio" id="15" name="grille" value="15">
+        <input type="radio" id="15" name="grille" value="15" onclick="setVal15()">
         <label class="grille" for="15"><img src="assets/img/15x15.png" alt="15x15 Grid"></img>15x15</label>
       </form>
       
@@ -34,11 +34,11 @@
       </div>
       <h3>Size of the grid</h3>
       <form class="optnGrille1">
-        <input type="radio" id="5" name="grille" value="5" checked>
+        <input type="radio" id="5" name="grille" value="5" checked onclick="setVal5()">
         <label class="grille" for="5"><img src="assets/img/5x5.png" alt="5x5 Grid"></img>5x5</label>
-        <input type="radio" id="10" name="grille" value="10">
+        <input type="radio" id="10" name="grille" value="10" onclick="setVal10()">
         <label class="grille" for="10"><img src="assets/img/10x10.png" alt="10x10 Grid"></img>10x10</label>
-        <input type="radio" id="15" name="grille" value="15">
+        <input type="radio" id="15" name="grille" value="15" onclick="setVal15()">
         <label class="grille" for="15"><img src="assets/img/15x15.png" alt="15x15 Grid"></img>15x15</label>
         </form>
       <!-- Button to start the generator program (TO DO) -->
@@ -47,4 +47,19 @@
       </button>
     </section>
   </div>
+  <script>
+    document.cookie = "taille" + "=" + 5;
+
+    function setVal5(){
+      document.cookie = "taille" + "=" + 5;
+    }
+
+    function setVal10(){
+      document.cookie = "taille" + "=" + 10;
+    }
+
+    function setVal15(){
+      document.cookie = "taille" + "=" + 15;
+    }
+  </script>
 </div>
