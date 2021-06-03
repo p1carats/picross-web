@@ -10,6 +10,13 @@ Web interface used to play with [piC11ross](https://github.com/inspwastaken/piC1
  - And much more!
 
 ## Changelog
+June 3rd:
+  - Updated the link between the executable and the game page
+  - Finalized link between the settings page's options and the game
+  - Corrected errors on both pages listed above
+  - Added a "Solve for me!" button which shows the game solution in an alert box and stops the chronometer
+  - Updated the game page so the score isn't registered if someone looks at the solution
+
 June 2nd:
   - Finalized link between the game and the scoreboard, now totally functional with records and usernames
   - Added first version of the generator/solver program executable to the website
@@ -134,5 +141,5 @@ Some of the sources and resources used are cited below:
 - [John Dugan](https://john-dugan.com/dump-and-restore-mysql-databases-in-windows/), for SQL Database dumps
 - [Meera Academy](https://meeraacademy.com/php-isset-function-check-if-variable-is-set/), for isset() function in PHP
 - [ProgrammingHE](https://programminghead.com/how-to-link-submit-button-to-another-page-in-html.php), for helping with submit buttons
-- 
+- [tutorialspoint](https://www.tutorialspoint.com/add-line-break-inside-a-string-conditionally-in-javascript), for javascript strings and line breaks
 - [Stack Overflow](https://stackoverflow.com) (various forums on different errors) and [W3School](https://www.w3schools.com) (for various CSS and HTML elements)
