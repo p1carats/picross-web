@@ -1,4 +1,4 @@
-/// navbar
+/// HEADER
 function openNav() {
   document.getElementById("navbar").style.height = "100%";
 }
@@ -6,7 +6,7 @@ function closeNav() {
   document.getElementById("navbar").style.height = "0%";
 }
 
-/// chrono
+/// CHRONOMETER
 ss=0;
 s=00;
 m='0'+0;
@@ -26,4 +26,23 @@ ss++;
 if (s==60){s=0;s=0; m++;if(m<10){m='0'+m;}}
 if (m==60){m='0'+0;h++;if(h<10){h='0'+h;}}
 chrono=window.setTimeout("Chrono();",1000);
+}
+
+/// THEMES
+function day(){
+  document.body.style.backgroundImage= "url('assets/img/header.jpg')";
+  document.getElementById("grid").style.color= "black";
+  document.getElementById("grid").style.webkitTextStroke = "0px";
+}
+
+function night(){
+  document.body.style.backgroundImage= "url('assets/img/night.jpg')";
+  document.getElementById("grid").style.color= "white";
+  document.getElementById("grid").style.webkitTextStroke = "0.5px black";
+}
+
+function beach(){
+  document.body.style.backgroundImage= "url('assets/img/beach.jpg')";
+  document.getElementById("grid").style.color= "black";
+  document.getElementById("grid").style.webkitTextStroke = "0px";
 }
