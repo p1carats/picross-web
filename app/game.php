@@ -9,8 +9,8 @@ $data = $req->fetchAll();
 // Separation of the different datas needed
 foreach($data as $datarow) {
   $dimension = $datarow['dimension'];
-  $legendC = $datarow['legendC'];
   $legendL = $datarow['legendL'];
+  $legendC = $datarow['legendC'];
   $grid = $datarow['solution'];
 }
 
