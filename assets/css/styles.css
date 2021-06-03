@@ -1,12 +1,4 @@
-/* header */
-body {
-  margin: 0;
-  width: 100%;
-  font-family: "Lato", sans-serif;
-  background-image: url("../img/header.jpg");
-  background-size: cover;
-}
-
+/* HEADER */
 header {
   background-color: black;
 }
@@ -83,7 +75,15 @@ header span {
   }
 }
 
-/* index */
+/* INDEX */
+body {
+  margin: 0;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  background-image: url("../img/header.jpg");
+  background-size: cover;
+}
+
 main {
   padding-left: 10px;
   font-family: "Sanchez", serif;
@@ -97,18 +97,26 @@ main h1 {
   -webkit-text-stroke: 1.5px #b37f46;
 }
 
-/* home page */
 h2 {
   text-align: center;
   color: white;
 }
 
+.titreAC {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 35px;
+  color: #fed054;
+  -webkit-text-stroke: 1.5px #b37f46;
+}
+
+/* HOME PAGE */
 .story {
   color: white;
   margin-right: 5%;
 }
 
-/* tutorial */
+/* TUTORIAL PAGE */
 .imagetuto {
   display: flex;
   flex-direction: row;
@@ -132,19 +140,20 @@ h2 {
   width: 55%;
 }
 
-.titreAC {
-  text-decoration: underline;
-  text-align: center;
-  font-size: 35px;
-  color: #fed054;
-  -webkit-text-stroke: 1.5px #b37f46;
-}
-
-/* buttons */
+/* BUTTONS */
 button {
   position: relative;
   bottom: 25%;
   left: 40%;
+}
+
+button:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+button a, button p {
+  text-decoration: none;
+  color: white;
 }
 
 .gameBtton {
@@ -199,16 +208,35 @@ button {
   color: black;
 }
 
-button:active {
-  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),inset 2px 2px 3px rgba(0, 0, 0, .6);
+.solveBtton {
+  border: 0;
+  line-height: 0.5;
+  padding: 0 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Bahiana', cursive;
+  cursor:pointer;
+  position: absolute;
+  left: 78%;
+  bottom: 25%;
+  border-radius: 10px;
+  background-color: rgb(134, 71, 18);
+  background-image: linear-gradient(to top left,rgba(0, 0, 0, .2),rgba(0, 0, 0, .2) 30%,rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
-button a {
-  text-decoration: none;
-  color: white;
+.solveBtton:hover {
+  background-color: rgb(158, 91, 15);
 }
 
-/* settings */
+.replay{
+  font-family: 'Bahiana', cursive;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 77%;
+  bottom: 15%;
+}
+/* SETTINGS PAGE */
 .division, .optnGrille, .optnGrille1{
   margin:0;
   padding:0;
@@ -218,6 +246,10 @@ button a {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.division .optnGrille img, .optnGrille1 img{
+  width: 50%;
 }
 
 .division{
@@ -248,10 +280,6 @@ button a {
           filter: none;
 }
 
-.division .optnGrille img, .optnGrille1 img{
-  width: 50%;
-}
-
 .optnGrille2 {
   background-image: url("../img/footer.jpg");
   background-size: cover;
@@ -268,10 +296,31 @@ button a {
   text-align: center;
 }
 
-/* picross itself */
-table{
+/* THE GAME */
+table {
   display: flex;
   justify-content: center;
+}
+
+.legendC td {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  text-align: center;
+  width: 2em;
+  height: 6em;
+}
+
+.legendC .null {
+  border: none;
+}
+
+.legendL {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+  text-align: end;
+  width: 6em;
+  height: 2em;
 }
 
 .dot {
@@ -286,17 +335,9 @@ table{
   -o-transition: all 0.5s ease; 
 }
 
-tr .dot{
+tr .dot {
   color: transparent;
   font-size: 0;
-}
-
-.legendC td {
-  border-right: 1px solid black;
-  border-left: 1px solid black;
-  text-align: center;
-  width: 2em;
-  height: 6em;
 }
 
 .box {
@@ -304,39 +345,7 @@ tr .dot{
   flex-direction: column;
 }
 
-.legendL {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  border-collapse: collapse;
-  text-align: end;
-  width: 6em;
-  height: 2em;
-}
-
-.legendC .null {
-  border: none;
-}
-
-.solveBtton {
-  border: 0;
-  line-height: 2.5;
-  padding: 0 20px;
-  font-size: 1.5rem;
-  text-align: center;
-  font-family: 'Bahiana', cursive;
-  position: absolute;
-  left: 78%;
-  bottom: 47%;
-  border-radius: 10px;
-  background-color: rgb(134, 71, 18);
-  background-image: linear-gradient(to top left,rgba(0, 0, 0, .2),rgba(0, 0, 0, .2) 30%,rgba(0, 0, 0, 0));
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),inset -2px -2px 3px rgba(0, 0, 0, .6);
-}
-
-.solveBtton:hover {
-  background-color: rgb(158, 91, 15);
-}
-
+/* THEME BUTTONS */
 .themeBtton1, .themeBtton2, .themeBtton3 {
   border: 0;
   line-height: 2;
@@ -370,7 +379,7 @@ tr .dot{
   left: 88%;
 }
 
-/* chrono */
+/* CHRONOMETER */
 input[type=text] {
   text-align: center;
   font-family: 'Bahiana', cursive;
@@ -378,7 +387,7 @@ input[type=text] {
   border: none;
   font-size: 30px;
   position: relative;
-  left: 75%;
+  left: 57%;
   border: 2px solid brown;
   border-style: ridge;
 }
@@ -387,7 +396,7 @@ input[name=seco]{
   visibility: hidden;
 }
 
-/* scoreboard */
+/* SCOREBOARD */
 #score {
   font-size: 25px;
   color: white;
@@ -403,15 +412,15 @@ input[name=seco]{
   border-bottom: 5px solid black;
 }
 
-/* error page */
+/* ERROR PAGE */
 #error {
   color: white;
 }
 
-/* footer */
+/* FOOTER */
 footer {
   text-align: center;
   border: black;
   background-image: url("../img/footer.jpg");
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
