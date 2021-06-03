@@ -15,7 +15,8 @@ June 3rd:
   - Finalized link between the settings page's options and the game
   - Corrected errors on both pages listed above
   - Added a "Solve for me!" button which shows the game solution in an alert box and stops the chronometer
-  - Updated the game page so the score isn't registered if someone looks at the solution
+  - Updated the game page so the score isn't registered if someone looks at the solution, or if someone refuses to set an username
+  - Added a 'Generate another game!" button that reloads the game page and generates another grid for the game.
 
 June 2nd:
   - Finalized link between the game and the scoreboard, now totally functional with records and usernames
