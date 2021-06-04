@@ -267,8 +267,8 @@ button a, button p {
     -moz-filter: grayscale(.5) opacity(.9);
       filter: grayscale(.5) opacity(.9);
   background-image: url("../img/footer.jpg");
-  outline: 2px solid brown;
   border-radius: 2rem;
+  border: 2px solid brown;
   text-align: center;
 }
 
@@ -281,7 +281,7 @@ button a, button p {
 .optnGrille2 {
   background-image: url("../img/footer.jpg");
   background-size: cover;
-  outline: 2px solid brown;
+  border: 2px solid brown;
   border-radius: 2rem;
   text-align: center;
   width: 300px;
