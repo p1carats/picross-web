@@ -158,7 +158,7 @@ function TableData() {
 
 // Solver function linked to the button
 function solveGrid(){
-  alert("La solution de cette grille est:\n" + soluceGrid);
+  alert("The solution of the grid is:\n" + soluceGrid);
   window.clearTimeout(chrono);
   s=0;m=0;h=0;ss=0; 
   window.status = '0 : 00 : 00'; 
