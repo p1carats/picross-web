@@ -123,13 +123,11 @@ h2 {
 }
 
 .imagetuto figure {
-  display: table;
-    
+    display:grid;
 }
 
 .imagetuto figure img {
   width: 50%;
-  margin-left: 15px;
 }
 
 .imagetuto figcaption {
