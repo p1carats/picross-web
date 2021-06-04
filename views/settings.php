@@ -11,12 +11,12 @@
       <!-- Here the generation will be random, only the size and the difficulty of the grid is needed -->
       <h3>Size of the grid</h3>
       <form class="optnGrille">
-        <input type="radio" id="5" name="grille" value="5" checked onclick="setVal5()">
-        <label class="grille" for="5"><img src="assets/img/5x5.png" alt="5x5 Grid"></img>5x5</label>
-        <input type="radio" id="10" name="grille" value="10" onclick="setVal10()">
-        <label class="grille" for="10"><img src="assets/img/10x10.png" alt="10x10 Grid"></img>10x10</label>
-        <input type="radio" id="15" name="grille" value="15" onclick="setVal15()">
-        <label class="grille" for="15"><img src="assets/img/15x15.png" alt="15x15 Grid"></img>15x15</label>
+        <input type="radio" id="sectionA5" name="grille" value="5" checked onclick="setVal5()">
+        <label class="grille" for="sectionA5"><img src="assets/img/5x5.png" alt="5x5 Grid"></img>5x5</label>
+        <input type="radio" id="sectionA10" name="grille" value="10" onclick="setVal10()">
+        <label class="grille" for="sectionA10"><img src="assets/img/10x10.png" alt="10x10 Grid"></img>10x10</label>
+        <input type="radio" id="sectionA15" name="grille" value="15" onclick="setVal15()">
+        <label class="grille" for="sectionA15"><img src="assets/img/15x15.png" alt="15x15 Grid"></img>15x15</label>
       </form>
       
       <!-- Button to start the generator program (TO DO) -->
@@ -34,14 +34,14 @@
       </div>
       <h3>Size of the grid</h3>
       <form class="optnGrille1">
-        <input type="radio" id="5" name="grille" value="5" checked onclick="setVal5()">
-        <label class="grille" for="5"><img src="assets/img/5x5.png" alt="5x5 Grid"></img>5x5</label>
-        <input type="radio" id="10" name="grille" value="10" onclick="setVal10()">
-        <label class="grille" for="10"><img src="assets/img/10x10.png" alt="10x10 Grid"></img>10x10</label>
-        <input type="radio" id="15" name="grille" value="15" onclick="setVal15()">
-        <label class="grille" for="15"><img src="assets/img/15x15.png" alt="15x15 Grid"></img>15x15</label>
+        <input type="radio" id="sectionB5" name="grille" value="5" checked>
+        <label class="grille" for="sectionB5"><img src="assets/img/5x5.png" alt="5x5 Grid"></img>5x5</label>
+        <input type="radio" id="sectionB10" name="grille" value="10">
+        <label class="grille" for="sectionB10"><img src="assets/img/10x10.png" alt="10x10 Grid"></img>10x10</label>
+        <input type="radio" id="sectionB15" name="grille" value="15">
+        <label class="grille" for="sectionB15"><img src="assets/img/15x15.png" alt="15x15 Grid"></img>15x15</label>
         </form>
-      <!-- Button to start the generator program (TO DO) -->
+      <!-- Button to start the generator program (DIDN'T HAVE ENOUGH TIME TO DO IT) -->
       <button class="gameBtton"type="button">
         <a href="?page=game">Go!</a>
       </button>
