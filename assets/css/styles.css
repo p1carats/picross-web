@@ -81,7 +81,6 @@ body {
   width: 100%;
   font-family: "Lato", sans-serif;
   background-image: url("../img/header.jpg");
-  background-size: cover;
 }
 
 main {
@@ -421,4 +420,8 @@ footer {
   border: black;
   background-image: url("../img/footer.jpg");
   padding-bottom: 5px;
+  position: absolute;
+  bottom:0;
+  right:0;
+  left:0;
 }
